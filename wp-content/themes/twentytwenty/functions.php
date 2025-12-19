@@ -786,3 +786,59 @@ function twentytwenty_get_elements_array() {
 	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+/**
+ * =====================================================
+ * CLEAN ADMIN MENU – CHỈ GIỮ CÁC MỤC CẦN THIẾT
+ * =====================================================
+ */
+add_action('admin_menu', function () {
+
+    // Các menu CHA được phép hiển thị
+    $allowed_menus = [
+        'upload.php',               // Media
+        'themes.php',               // Giao diện
+        'plugins.php',              // Plugin
+        'ai1wm_export',             // All-in-One WP Migration
+        'options-general.php',      // Cài đặt
+    ];
+
+    global $menu;
+
+    foreach ($menu as $item) {
+        if (!in_array($item[2], $allowed_menus)) {
+            remove_menu_page($item[2]);
+        }
+    }
+
+    /**
+     * GIAO DIỆN – chỉ giữ đúng mục cần
+     */
+    remove_submenu_page('themes.php', 'themes.php');          // Themes
+    remove_submenu_page('themes.php', 'customize.php');       // Customize
+    remove_submenu_page('themes.php', 'widgets.php');         // Widgets
+    remove_submenu_page('themes.php', 'nav-menus.php');       // Menus
+    remove_submenu_page('themes.php', 'site-editor.php');     // Site Editor
+
+    /**
+     * CÀI ĐẶT – nếu muốn tối giản thêm
+     * (bỏ comment nếu cần)
+     */
+    // remove_submenu_page('options-general.php', 'options-writing.php');
+    // remove_submenu_page('options-general.php', 'options-reading.php');
+    // remove_submenu_page('options-general.php', 'options-discussion.php');
+    // remove_submenu_page('options-general.php', 'options-media.php');
+    // remove_submenu_page('options-general.php', 'options-permalink.php');
+
+}, 999);
+
+/**
+ * =====================================================
+ * ẨN TOÀN BỘ ADMIN NOTICE
+ * =====================================================
+ */
+add_action('admin_init', function () {
+    remove_all_actions('admin_notices');
+    remove_all_actions('all_admin_notices');
+});
+
