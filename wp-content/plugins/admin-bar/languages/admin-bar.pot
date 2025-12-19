@@ -1,0 +1,503 @@
+# Copyright (C) 2025 admin-bar
+# This file is distributed under the same license as the admin-bar package.
+msgid ""
+msgstr ""
+"Project-Id-Version: admin-bar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-09-04 12:06+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../class-admin-bar-pro.php:117
+msgid "<b>Admin Bar Editor Pro</b> requires <strong>Admin Bar Editor</strong> plugin to be active. Please activate Admin Bar Editor to continue."
+msgstr ""
+
+#: ../class-admin-bar-pro.php:118
+msgid "Activate Admin Bar Editor"
+msgstr ""
+
+#: ../class-admin-bar-pro.php:109
+msgid "<b>Admin Bar Editor Pro</b> requires %1$s\"Admin Bar Editor\"%2$s plugin to be installed and activated. Please install Admin Bar Editor to continue."
+msgstr ""
+
+#: ../class-admin-bar-pro.php:110
+msgid "Install Admin Bar Editor"
+msgstr ""
+
+#: ../class-admin-bar.php:72, ../class-admin-bar.php:103
+msgid "Adminbar Editor Settings"
+msgstr ""
+
+#: ../class-admin-bar.php:73, ../class-admin-bar.php:92, ../class-admin-bar.php:93
+msgid "Adminbar Editor"
+msgstr ""
+
+#: ../class-admin-bar.php:104, ../Pro/License/Loader.php:615, ../Pro/License/Loader.php:613
+msgid "Settings"
+msgstr ""
+
+#: ../Inc/Utils.php:189
+msgid "Current Blog ID"
+msgstr ""
+
+#: ../Inc/Utils.php:452
+msgid "%s <a href=\"https://jeweltheme.com/admin-bar-editor/pricing\" target=\"_blank\">Upgrade to Pro Now!</a>"
+msgstr ""
+
+#: ../Inc/Utils.php:511
+msgid "Upgrade <span>Pro</span> for White Labeling"
+msgstr ""
+
+#: ../Inc/Utils.php:514
+msgid "<strong>%1$s</strong> can be completely re-branded with your own brand Logo, Name and Author Details. Your clients will never know what tools you are using to build their website and will think that this is your own tool set. White-labeling works as long as your license is active. "
+msgstr ""
+
+#: ../Inc/Utils.php:516
+msgid ""
+msgstr ""
+
+#: ../Inc/Utils.php:517
+msgid "Note: Agency or Higher Plans Only"
+msgstr ""
+
+#: ../Inc/Utils.php:519
+msgid "Upgrade Now"
+msgstr ""
+
+#: ../Inc/Utils.php:530, ../Inc/Utils.php:548
+msgid "Select"
+msgstr ""
+
+#: ../Inc/Utils.php:537, ../Inc/Utils.php:555
+msgid "No saved templates found!"
+msgstr ""
+
+#: ../Inc/Classes/AdminBarEditorApiEndPoints.php:344
+msgid "Settings Saved"
+msgstr ""
+
+#: ../Inc/Classes/AdminBarEditorApiEndPoints.php:360
+msgid "Settings reset"
+msgstr ""
+
+#: ../Inc/Classes/AdminBarEditorApiEndPoints.php:388
+msgid "No options supplied to save"
+msgstr ""
+
+#: ../Inc/Classes/AdminBarEditorApiEndPoints.php:394
+msgid "Menu Imported"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:86
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:90
+msgid "I found a better plugin"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:91
+msgid "Please share which plugin"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:94
+msgid "I couldn't get the plugin to work"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:98
+msgid "It's a temporary deactivation"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:102
+msgid "I have %1$s Pro"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:104
+msgid "Wait! Don't deactivate %1$s. You have to activate both %1$s and %1$s Pro in order for the plugin to work."
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:107
+msgid "I need better design and presets"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:108
+msgid "Let us know your thoughts"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:111
+msgid "Other"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:112
+msgid "Please share the reason"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:133
+msgid "- Feedback"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:137
+msgid "If you have a moment, please share why you are deactivating"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:151
+msgid "Submit &amp; Deactivate"
+msgstr ""
+
+#: ../Inc/Classes/Feedback.php:152
+msgid "Skip & Deactivate"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:60
+msgid "admin-bar News & Updates"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:166, ../Inc/Classes/Pro_Upgrade.php:175, ../Inc/Classes/Pro_Upgrade.php:184
+msgid "(opens in a new window)"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:437
+msgid "Notice:"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:440
+msgid "Offer Ends In"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:444, ../Inc/Classes/Notifications/Notifications.php:178
+msgid "Days"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:449, ../Inc/Classes/Notifications/Notifications.php:183
+msgid "Hours"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:454, ../Inc/Classes/Notifications/Notifications.php:188
+msgid "Minutes"
+msgstr ""
+
+#: ../Inc/Classes/Pro_Upgrade.php:459, ../Inc/Classes/Notifications/Notifications.php:193
+msgid "Seconds"
+msgstr ""
+
+#: ../Inc/Classes/Recommended_Plugins.php:64, ../Inc/Classes/Recommended_Plugins.php:65
+msgid "Recommended"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Ask_For_Rating.php:22, ../Inc/Classes/Notifications/What_We_Collect.php:88
+msgid "admin-bar"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Ask_For_Rating.php:23
+msgid "A positive rating will keep us motivated to continue supporting and improving this free plugin, and will help spread its popularity.<br> Your help is greatly appreciated!"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Ask_For_Rating.php:44, ../Inc/Classes/Notifications/Subscribe.php:141
+msgid "Rate Now"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Ask_For_Rating.php:47, ../Inc/Classes/Notifications/Subscribe.php:144
+msgid "Later"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Ask_For_Rating.php:50, ../Inc/Classes/Notifications/Subscribe.php:147
+msgid "I already did"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Notifications.php:174
+msgid "Deal Ends In"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Subscribe.php:107
+msgid "Logo"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/Subscribe.php:117
+msgid "Get Discount"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/What_We_Collect.php:74
+msgid "what we collect"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/What_We_Collect.php:87
+msgid "Want to help make <strong>%1$s</strong> even more awesome? Allow %1$s to collect non-sensitive diagnostic data and usage information."
+msgstr ""
+
+#: ../Inc/Classes/Notifications/What_We_Collect.php:94
+msgid "Server environment details (php, mysql, server, WordPress versions), Number of users in your site, Site language, Number of active and inactive plugins, Local or Production Site, IP Address, Site name and url, Your name and email address etc. No sensitive data is tracked. Learn more about our <a href=\"%1$s\" target=\"_blank\">Privacy Policy</a>, how we handle and collects your data."
+msgstr ""
+
+#: ../Inc/Classes/Notifications/What_We_Collect.php:120
+msgid "Allow"
+msgstr ""
+
+#: ../Inc/Classes/Notifications/What_We_Collect.php:123
+msgid "No Thanks"
+msgstr ""
+
+#: ../Libs/Recommended.php:101
+msgid "Recommended Plugins"
+msgstr ""
+
+#: ../Libs/Recommended.php:125, ../Libs/Recommended.php:128
+msgid "Search Plugins"
+msgstr ""
+
+#: ../Libs/Recommended.php:127
+msgid "Search plugins..."
+msgstr ""
+
+#: ../Libs/Recommended.php:182
+msgid "Status:"
+msgstr ""
+
+#: ../Libs/Recommended.php:218, ../Libs/Recommended.php:212, ../Libs/Recommended.php:198
+msgid "Inactive"
+msgstr ""
+
+#: ../Libs/Recommended.php:206, ../Libs/Recommended.php:192
+msgid "Active"
+msgstr ""
+
+#: ../Libs/Recommended.php:186
+msgid "No Installed"
+msgstr ""
+
+#: ../Libs/Recommended.php:264
+msgid "Installed"
+msgstr ""
+
+#: ../Libs/Recommended.php:257
+msgid "Activate"
+msgstr ""
+
+#: ../Libs/Recommended.php:250, ../Pro/License/Client.php:662, ../Pro/License/Loader.php:504
+msgid "Activated"
+msgstr ""
+
+#: ../Libs/Recommended.php:241
+msgid "Update Now"
+msgstr ""
+
+#: ../Libs/Recommended.php:233
+msgid "Install Now"
+msgstr ""
+
+#: ../Libs/Recommended.php:290, ../Libs/Recommended.php:348
+msgid "Nonce is invalid"
+msgstr ""
+
+#: ../Libs/Recommended.php:294, ../Libs/Recommended.php:352
+msgid "Invalid access"
+msgstr ""
+
+#: ../Libs/Recommended.php:301, ../Libs/Recommended.php:359
+msgid "Invalid plugin"
+msgstr ""
+
+#: ../Libs/Recommended.php:316
+msgid "Activate success"
+msgstr ""
+
+#: ../Libs/Recommended.php:323, ../Libs/Recommended.php:456
+msgid "Error."
+msgstr ""
+
+#: ../Libs/Recommended.php:437
+msgid "Update success"
+msgstr ""
+
+#: ../Libs/Recommended.php:412
+msgid "Install success"
+msgstr ""
+
+#: ../Libs/Recommended.php:447
+msgid "Error exception."
+msgstr ""
+
+#: ../Pro/License/Client.php:150, ../Pro/License/Client.php:151, ../Pro/License/Client.php:262, ../Pro/License/Client.php:263
+msgid "%s"
+msgstr ""
+
+#: ../Pro/License/Client.php:152, ../Pro/License/Client.php:617
+msgid "API Key Activation"
+msgstr ""
+
+#: ../Pro/License/Client.php:153
+msgid "API Key Deactivation"
+msgstr ""
+
+#: ../Pro/License/Client.php:387
+msgid "Auto-updates unavailable."
+msgstr ""
+
+#: ../Pro/License/Client.php:408
+msgid "Enable auto-updates"
+msgstr ""
+
+#: ../Pro/License/Client.php:404
+msgid "Disable auto-updates"
+msgstr ""
+
+#: ../Pro/License/Client.php:398
+msgid "Auto-updates disabled"
+msgstr ""
+
+#: ../Pro/License/Client.php:396
+msgid "Auto-updates enabled"
+msgstr ""
+
+#: ../Pro/License/Client.php:511
+msgid "The API Key could not be deactivated. Use the API Key Deactivation tab to manually deactivate the API Key before activating a new API Key. If all else fails, go to Plugins, then deactivate and reactivate this plugin, or if a theme change themes, then change back to this theme, then go to the Settings for this plugin/theme and enter the API Key information again to activate it. Also check the My Account dashboard to see if the API Key for this site was still active before the error message was displayed."
+msgstr ""
+
+#: ../Pro/License/Client.php:538, ../Pro/License/Loader.php:413
+msgid "The <strong>%1$s</strong> API Key has not been activated, so the %2$s is inactive! %3$sClick here%4$s to activate <strong>%5$s</strong>."
+msgstr ""
+
+#: ../Pro/License/Client.php:556
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %1$s updates. Please add %2$s to %3$s."
+msgstr ""
+
+#: ../Pro/License/Client.php:596, ../Pro/License/Client.php:592
+msgid "Save Changes"
+msgstr ""
+
+#: ../Pro/License/Client.php:618
+msgid "API Key"
+msgstr ""
+
+#: ../Pro/License/Client.php:624, ../Pro/License/Loader.php:360, ../Pro/License/Loader.php:739
+msgid "Product ID"
+msgstr ""
+
+#: ../Pro/License/Client.php:636
+msgid "API Key Status"
+msgstr ""
+
+#: ../Pro/License/Client.php:637
+msgid "Activation Info"
+msgstr ""
+
+#: ../Pro/License/Client.php:641
+msgid "API Deactivation"
+msgstr ""
+
+#: ../Pro/License/Client.php:642
+msgid "Deactivate API Key"
+msgstr ""
+
+#: ../Pro/License/Client.php:667
+msgid "Deactivated"
+msgstr ""
+
+#: ../Pro/License/Client.php:748
+msgid "Previous activation attempt errors:"
+msgstr ""
+
+#: ../Pro/License/Client.php:875
+msgid "The API Key activation could not be completed due to an error on the store server or your server. See the Activation Error section below for details. The activation results were empty."
+msgstr ""
+
+#: ../Pro/License/Client.php:859, ../Pro/License/Loader.php:503
+msgid "%s activated. "
+msgstr ""
+
+#: ../Pro/License/Client.php:866
+msgid "Connection failed to the License Key API server. See the Activation Error section below for details. There may be a problem on your server preventing outgoing requests, or the store is blocking your request to activate the plugin/theme."
+msgstr ""
+
+#: ../Pro/License/Client.php:920
+msgid "The API Key activation could not be completed due to an unknown error possibly on the store server The activation results were empty."
+msgstr ""
+
+#: ../Pro/License/Client.php:909
+msgid "API Key deactivated. "
+msgstr ""
+
+#: ../Pro/License/Client.php:959
+msgid "Deactivates an API Key so it can be used on another blog."
+msgstr ""
+
+#: ../Pro/License/Client.php:983, ../Pro/License/Client.php:1030
+msgid "The API Key is missing from the deactivation request."
+msgstr ""
+
+#: ../Pro/License/Loader.php:350, ../Pro/License/Loader.php:729
+msgid "License Key Activation"
+msgstr ""
+
+#: ../Pro/License/Loader.php:355, ../Pro/License/Loader.php:332, ../Pro/License/Loader.php:734, ../Pro/License/Loader.php:711
+msgid "License Key"
+msgstr ""
+
+#: ../Pro/License/Loader.php:365, ../Pro/License/Loader.php:336, ../Pro/License/Loader.php:744, ../Pro/License/Loader.php:715
+msgid "License Status"
+msgstr ""
+
+#: ../Pro/License/Loader.php:372, ../Pro/License/Loader.php:615, ../Pro/License/Loader.php:751
+msgid "Activate License"
+msgstr ""
+
+#: ../Pro/License/Loader.php:323
+msgid "License Key Deactivation"
+msgstr ""
+
+#: ../Pro/License/Loader.php:326
+msgid "Deactivates an License Key Key so it can be used on another blog."
+msgstr ""
+
+#: ../Pro/License/Loader.php:343, ../Pro/License/Loader.php:613, ../Pro/License/Loader.php:722
+msgid "Deactivate License"
+msgstr ""
+
+#: ../Pro/License/Loader.php:443
+msgid "Oops! Security nonce is invalid."
+msgstr ""
+
+#: ../Pro/License/Loader.php:529, ../Pro/License/Loader.php:588
+msgid "The License Key activation could not be commpleted due to an unknown error possibly on the store server The activation results were empty."
+msgstr ""
+
+#: ../Pro/License/Loader.php:513
+msgid "Connection failed to the License Key API server. Try again later. There may be a problem on your server preventing outgoing requests, or the store is blocking your request to activate the plugin/theme."
+msgstr ""
+
+#: ../Pro/License/Loader.php:537
+msgid "License or Product ID is invalid."
+msgstr ""
+
+#: ../Pro/License/Loader.php:554
+msgid "The License Key is missing from the deactivation request."
+msgstr ""
+
+#: ../Pro/License/Loader.php:573
+msgid "License Key deactivated. "
+msgstr ""
+
+#: ../Pro/License/Loader.php:597
+msgid "The License Key is already deactivated."
+msgstr ""
+
+#: ../Pro/License/Loader.php:702
+msgid "License Deactivation"
+msgstr ""
+
+#: ../Pro/License/Loader.php:705
+msgid "Deactivates an License Key so it can be used on another blog."
+msgstr ""
+
+#: ../Pro/License/manager.php:36
+msgid "License"
+msgstr ""
+
+#: ../Pro/License/manager.php:37
+msgid "License Activation"
+msgstr ""

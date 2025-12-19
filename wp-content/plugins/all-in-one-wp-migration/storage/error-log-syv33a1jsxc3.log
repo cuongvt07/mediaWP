@@ -1,0 +1,3 @@
+Dec 19 2025 04:23:36
+{"type":8192,"message":"explode(): Passing null to parameter #2 ($string) of type string is deprecated","file":"C:\\laragon\\www\\media\\wp-content\\plugins\\adminify-admin-columns\\Libs\\Update_Checker.php","line":98}
+

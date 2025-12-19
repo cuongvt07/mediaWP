@@ -1,0 +1,313 @@
+/*
+Theme Name: Shop2
+Description: This is a child theme for Flatsome Theme
+Theme URI: https://muatheme.com
+Author: MuaTheme.com
+Author URI: https://muatheme.com
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
+
+/* Full height toàn bộ section */
+.full-screen-wrapper,
+.full-screen-row {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Cột giữa stretch 100% chiều cao */
+.center-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Ảnh full height nhưng giữ nguyên tỉ lệ */
+.full-height-image img {
+    height: 100vh !important;
+    width: auto !important;
+    object-fit: contain !important;
+}
+
+
+
+.shop-container .product-main .price-wrapper del span {
+    font-size: 22px !important;
+    color: gray;
+}
+
+.shop-container .product-main .price-wrapper ins span, .shop-container .product-main .price-wrapper span {
+    font-weight: 500;
+    
+}
+
+
+.shop-container .product-main .product_meta .tagged_as a {
+    font-size: 14px;
+    
+}
+
+.product_list_widget ins span, .product_list_widget span.amount {
+    font-weight: 500;
+    
+    font-size: 16px;
+}
+
+.product_list_widget ins span, .product_list_widget span.amount {
+    font-size: 16px !important;
+}
+
+.button-all {
+	background : #a43437;
+	color : #fff
+}
+
+.tab.has-icon {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+/* Loại bỏ border cho thằng active (nếu cần) */
+.tab.has-icon.active {
+    border: none; /* hoặc style riêng mà bạn đã có */
+}
+
+.thoi-trang-nam .tabbed-content .nav li {
+    margin: 0 !important;
+}
+
+.thoi-trang-nam .tabbed-content .nav li.active a {
+    color: #a11e21 !important;
+}
+
+.add-to-cart-button .add_to_cart_button {
+    font-size: 0 !important; /* Ẩn chữ */
+    background: #a43437 !important;
+    border-radius: 50% !important;
+    width: 32px;   /* bé lại */
+    height: 32px;  /* bé lại */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+	margin-top: 10px;
+}
+
+/* Dấu + */
+.add-to-cart-button .add_to_cart_button::before {
+    content: "+" !important;
+    font-size: 18px !important; /* nhỏ lại theo nút */
+    color: #fff !important;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Hover */
+.add-to-cart-button .add_to_cart_button:hover {
+    background: rgb(75 61 166) !important;
+    transform: scale(1.1);
+}
+
+.product-small {
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.box-image img {
+	border-radius: 10px;
+}
+
+.box-text.text-center.is-small {
+    border-radius: 0 0 10px 10px; /* chỉ bo 2 góc dưới */
+}
+
+.product-small .price span.amount > ins {
+	
+}
+
+#mega-menu-wrap {
+	background : #a43437 !important;
+}
+
+[data-icon-label]:after, .secondary.is-underline:hover, .secondary.is-outline:hover, .icon-label, .button.secondary:not(.is-outline), .button.alt:not(.is-outline), .badge-inner.on-sale, .button.checkout, .single_add_to_cart_button {
+    background-
+}
+
+.searchform-wrapper.ux-search-box.relative.form-.is-normal {
+    border: 1px solid #ccc;
+}
+
+#mega_menu .khuyen-mai-nav a {
+	    color: #3d3d3d !important;
+}
+
+#mega_menu>li>a:hover {
+    background: #a43437 !important;
+	color: #fff !important;
+}
+
+.ban-chay-nhat-tuan .page-subheading {
+ 
+}
+
+.product-small .price span.amount {
+	
+}
+
+/* Quick View thành icon kính lúp */
+.image-tools.grid-tools .quick-view {
+    position: absolute;
+    top: -160px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:  #a43437;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: -9999px; /* Ẩn chữ */
+    overflow: hidden;
+}
+
+/* Thêm icon kính lúp */
+.image-tools.grid-tools .quick-view::before {
+    content: "\f002"; /* Unicode kính lúp của Font Awesome */
+    font-family: "FontAwesome";
+    text-indent: 0;
+}
+
+.image-tools.grid-tools .quick-view::before {
+    font-weight: 400;
+}
+
+a:hover {
+    color: #5A3E00 !important;
+}
+
+.searchform-wrapper.ux-search-box.relative.form-.is-normal {
+    border-radius: 5px;
+}
+
+.product-title {
+  line-height: 1.4;      /* tùy font bạn */
+  min-height: calc(1.4em * 3);  /* luôn cao bằng 3 dòng */
+}
+
+.product-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  min-height: calc(1.4em * 3);
+	font-size: 16px;
+}
+
+.box-text h1, .box-text h2, .box-text h3, .box-text h4, .box-text h5, .box-text h6, .box-text a:not(.button) {
+	  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.nav.nav-outline {
+  display: flex;              /* xếp ngang */
+  flex-wrap: nowrap;          /* không cho xuống dòng */
+  overflow-x: auto;           /* bật cuộn ngang */
+  -webkit-overflow-scrolling: touch; /* mượt trên mobile */
+}
+
+.nav.nav-outline li {
+  flex: 0 0 auto;             /* giữ kích thước theo nội dung */
+  margin-right: 10px;         /* khoảng cách giữa các tab */
+}
+
+.nav.nav-outline::-webkit-scrollbar {
+  height: 6px;                /* chiều cao thanh cuộn */
+}
+
+.nav.nav-outline::-webkit-scrollbar-thumb {
+  background: #ccc;           /* màu thanh cuộn */
+  border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+  .thoi-trang-nam .tabbed-content .nav {
+      height: 80px !important; /* trên mobile */
+  }
+	
+	.social-icons.follow-icons.full-width.text-center {
+		display: flex
+;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+	}
+}
+
+	.social-icons.follow-icons.full-width.text-center {
+		display: flex
+;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+	}
+
+.product-small .box-text .product-title {
+   margin-bottom: 0 !important;
+}
+
+.add-to-cart-button {
+	display: none !important;
+}
+
+.product-small.col.has-hover.product {
+    border: 1px solid #ccc;
+    border-radius: 6px; /* tùy chọn - bo góc cho đẹp */
+    overflow: hidden; /* giúp viền gọn quanh hình */
+    transition: all 0.3s ease;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* tạo khoảng cách đều giữa các item */
+}
+
+.tab-mon {
+	    background: #f8e8b8;
+    border-radius: 10px;
+}
+
+.row, .gallery {
+	align-items: flex-start !important;
+}
+
+.nav-center {
+    justify-content: space-between !important;
+}
+
+.flex-col.hide-for-medium.flex-center {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+pre, blockquote, form, figure, p, dl, ul, ol {
+    margin-bottom: 0.5em !important;
+}

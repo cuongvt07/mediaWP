@@ -1,0 +1,9 @@
+== Changelog ==
+= 1.0.5 (02-08-2024) =
+* Update: Range slider color update
+* Fixed: Admin CSS issues fixed
+* Fixed: Automatic collapse after expanding issue fixed
+* Fixed: Subscribe logo issue fixed
+
+= 1.0.4 (24-08-2024) =
+- Initial Release

@@ -1,0 +1,73 @@
+== Changelog ==
+= 1.1.2.0 (04-09-2025) =
+* Fixed: Logout url redirecting to confirmation page issue.
+* Fixed: Admin bar caching url for third party plugins menu item.
+* Improve: Editor will not allow to update url for default menu items.
+* UX Improvement: Editor UX is updated.
+
+= 1.1.2 (10-07-2025) =
+* Fixed: Edit site link was unavailable on admin bar editor.
+
+= 1.1.1 (14-08-2025) =
+* Fixed: Conflicting with WP Adminify White Label issue fixed
+
+= 1.1.0 (31-05-2025) =
+* Fixed: logout action taking confirmation issue Support url: https://wordpress.org/support/topic/logout-confirmation-link/
+* Fixed: Deprecation notice issue of str_getcsv() without escape value, Support URL: https://wordpress.org/support/topic/deprecated-85/
+* Fixed : Duplicated user name on the top right profile tab issue, Support URL: https://wordpress.org/support/topic/duplicated-user-name-on-the-or-profile-tab/
+* Fixed: The WordPress admin menu’s submenu items are positioned incorrectly, extending beyond the screen’s bottom edge. Now adjusted with a 30px gap
+
+= 1.0.4.0 (05-03-2025) =
+* Updated: Frontend style not working issue updated
+* Updated: Attachment image for icons updated
+* Updated: Admin settings panel updated
+* Updated: Toaster position change to top-right corner
+* Updated: Loading image updated
+* Updated: Screenshot & Banner image updated
+* Fixed: Custom icons uploader "Select Files" color issue fixed
+* Fixed: Menu item image height fixed
+* Fixed: User info showing wrong name
+* Fixed: Admin bar editor is not synced once new item added or deleted.
+
+= 1.0.3.1 (22-12-2024) =
+* Update: Query optimization and security measures
+
+= 1.0.3.0 (31-10-2024) =
+* Fixed: Free vs Pro License and Activation issue fixed
+
+= 1.0.2.9 (14-10-2024) =
+* Updated: "Howdy" Text Change option not working issue fixed
+* Fixed: Hidden For Admin Bar Item Compatibility with WP Adminify
+* Fixed: Option Page not showing Compatibility with WP Adminify
+
+= 1.0.2.8 (7-9-2024) =
+* Updated: UI Improvements
+
+= 1.0.2.7 (31-08-2024) =
+* Fixed: CSS issue fix
+* Fixed: Pre-loader image issue
+
+= 1.0.2.6 (29-08-2024) =
+* Updated: Added Advanced Tab for managing CSS for Admin bar
+* Updated: Compatibility with WP Adminify
+* Fixed: Active tab issue fixed
+* Added: Data Migration add with WP Adminify
+
+= 1.0.2.5 (08-05-2024) =
+* Updated: Console log DOM error issue fixed
+* Updated: Frontend Assets update
+* Updated: Display name issue fixed
+
+= 1.0.2.4 (28-04-2024) =
+* Updated: Admin bar Draggable issue fixed
+* Updated: Admin Bar Submenu Icon display issue fixed
+* Updated: Icon Picker Logo display issue fixed
+* Updated: Save Settings notification issue fixed
+* Updated: Deactivation Icon not showing issue fixed
+
+= 1.0.2.3 (10-04-2024) =
+* Updated: Re-Coded and released with updated UI
+* Added: Backend Admin Bar Editor
+* Added: Frontend Admin Bar Editor
+* Added: Icon Picker for Admin Bar Items
+* Added: Nested Admin bar Options Added
