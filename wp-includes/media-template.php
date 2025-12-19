@@ -1582,4 +1582,196 @@ function wp_print_media_templates() {
 	 * @since 3.5.0
 	 */
 	do_action( 'print_media_templates' );
+	?>
+	<script>
+	jQuery(document).ready(function($) {
+		// Antigravity: Context Menu for Media Library Items
+		// Create Context Menu Style
+		$('<style>')
+			.prop('type', 'text/css')
+			.html(`
+				.wp-media-context-menu {
+					position: absolute;
+					z-index: 999999;
+					background: #fff;
+					border: 1px solid #ccd0d4;
+					box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+					min-width: 180px;
+					padding: 5px 0;
+					border-radius: 4px;
+					display: none;
+				}
+				.wp-media-context-menu ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+				}
+				.wp-media-context-menu li {
+					margin: 0;
+				}
+				.wp-media-context-menu a {
+					display: block;
+					padding: 8px 12px;
+					text-decoration: none;
+					color: #1d2327;
+					font-size: 13px;
+					cursor: pointer;
+				}
+				.wp-media-context-menu a:hover {
+					background-color: #f0f0f1;
+					color: #2271b1;
+				}
+				.wp-media-context-menu .delete-permanently {
+					color: #b32d2e;
+					border-top: 1px solid #f0f0f1;
+					margin-top: 4px;
+					padding-top: 8px;
+				}
+				.wp-media-context-menu .delete-permanently:hover {
+					background-color: #fce8e8;
+					color: #b32d2e;
+				}
+			`)
+			.appendTo('head');
+
+		// Create Context Menu DOM
+		var $contextMenu = $('<div class="wp-media-context-menu"></div>').appendTo('body');
+
+		// Handle Right Click on Attachment
+		$(document).on('contextmenu', '.attachment', function(e) {
+			e.preventDefault();
+			var $target = $(this);
+			var id = $target.data('id');
+			
+			// Validate context
+			if (!id || typeof wp === 'undefined' || !wp.media || !wp.media.model) return;
+
+			var attachment = wp.media.model.Attachment.get(id);
+			if (!attachment) return;
+
+			var url = attachment.get('url');
+			var filename = attachment.get('filename');
+			
+			// Build Menu HTML
+			var menuHtml = '<ul>';
+			
+			// View Details (Simulate Click)
+			menuHtml += '<li><a href="#" class="view-item" data-id="' + id + '">Xem chi tiết</a></li>';
+			
+			// View Original File
+			if (url) {
+				menuHtml += '<li><a href="' + url + '" target="_blank">Xem file gốc</a></li>';
+				menuHtml += '<li><a href="' + url + '" download>Tải về</a></li>';
+			}
+
+			// Copy Link
+			if (url) {
+				menuHtml += '<li><a href="#" class="copy-url" data-url="' + url + '">Sao chép URL</a></li>';
+			}
+
+			// Delete
+			if (attachment.get('can') && attachment.get('can').remove) {
+				menuHtml += '<li><a href="#" class="delete-permanently" data-id="' + id + '">Xóa vĩnh viễn</a></li>';
+			}
+
+			menuHtml += '</ul>';
+			
+			// Show Menu
+			$contextMenu.html(menuHtml);
+			
+			// Position Check (keep in viewport)
+			var menuWidth = 180;
+			var menuHeight = $contextMenu.height() || 200; // approx
+			var left = e.pageX;
+			var top = e.pageY;
+			
+			if (left + menuWidth > $(window).width()) {
+				left -= menuWidth;
+			}
+			
+			$contextMenu.css({
+				top: top + 'px',
+				left: left + 'px',
+				display: 'block'
+			});
+		});
+
+		// Handle Outside Click to Close
+		$(document).on('click', function() {
+			$contextMenu.hide();
+		});
+
+		// Prevent menu closing if clicking inside (e.g. selecting text), but links should work
+		$contextMenu.on('click', function(e){
+			e.stopPropagation();
+		});
+
+		// Action: View Item
+		$contextMenu.on('click', '.view-item', function(e) {
+			e.preventDefault();
+			$contextMenu.hide();
+			var id = $(this).data('id');
+			// Trigger global click on the thumbnail to open modal
+			// This delegates to the WP media view handler
+			$('.attachment[data-id="' + id + '"] .thumbnail').trigger('click');
+		});
+
+		// Action: Copy URL
+		$contextMenu.on('click', '.copy-url', function(e) {
+			e.preventDefault();
+			$contextMenu.hide();
+			var url = $(this).data('url');
+			
+			// Use Clipboard API or fallback
+			if (navigator.clipboard && navigator.clipboard.writeText) {
+				navigator.clipboard.writeText(url).then(function() {
+					// Minimal feedback
+					// We can use wp.media.view.UploaderStatus but simpler to just alert or silent
+					// alert('Đã sao chép!'); 
+					// WP style notice?
+				});
+			} else {
+				// Fallback
+				var $temp = $("<input>");
+				$("body").append($temp);
+				$temp.val(url).select();
+				document.execCommand("copy");
+				$temp.remove();
+			}
+		});
+		
+		// Action: Download
+		// Handled natively by href and download attribute if possible, else opens in tab.
+		$contextMenu.on('click', 'a[download]', function(e) {
+		    $contextMenu.hide();
+		});
+
+        // Action: View Original
+        $contextMenu.on('click', 'a[target="_blank"]', function(e) {
+            $contextMenu.hide();
+        });
+
+		// Action: Delete
+		$contextMenu.on('click', '.delete-permanently', function(e) {
+			e.preventDefault();
+			$contextMenu.hide();
+			var id = $(this).data('id');
+			
+			if (confirm('Bạn có chắc chắn muốn xóa vĩnh viễn mục này?')) {
+				var attachment = wp.media.model.Attachment.get(id);
+				// Destroying model triggers view removal automatically in Backbone
+				attachment.destroy({
+					success: function(model, response) {
+						// Optional: clean up check
+					},
+					error: function(model, response) {
+						alert('Lỗi xóa tập tin.');
+					}
+				});
+			}
+		});
+
+	});
+	</script>
+	<?php
 }
