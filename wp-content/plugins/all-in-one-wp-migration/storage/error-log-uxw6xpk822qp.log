@@ -1,0 +1,6 @@
+Dec 19 2025 09:53:50
+{"Number":2,"Message":"rmdir(C:\\laragon\\www\\media\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\uxw6xpk822qp): Directory not empty","File":"C:\\laragon\\www\\media\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":74}
+
+Dec 19 2025 09:53:50
+{"Number":2,"Message":"filesize(): stat failed for C:\\laragon\\www\\media\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\uxw6xpk822qp\\media-test-20251219-095329-25e7bsbyejwq.wpress","File":"C:\\laragon\\www\\media\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\archiver\\class-ai1wm-archiver.php","Line":233}
+
