@@ -1,3 +1,6 @@
-/vendor
-/build
-/.idea
+wp-content/uploads/
+wp-content/bfu-temp/
+wp-content/ai1wm-backups/
+*.part
+*.zip
+*.wpress
